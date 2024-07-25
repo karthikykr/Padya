@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+nav img{
+    width: 70px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+nav ul{
+    list-style-type: none;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    position: sticky;
+}
+
+nav li{
+    padding: 10px;
+    font-size: 25px;
+}
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.playlist{
+    height: 1000px;
+    width: 2000px;
+    background-color: #a8dadc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.songs{
+    background-color: #f4f3ee;
+    height: 690px;
+    width: 400px;
+    border-radius: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 970px; /* Full viewport height */
+  }
+.music-details{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.banner{
+    height: 400px;
+    background-color: #f5ebe0;
+    width: 100%;
+}
+.detail{
+    background-color: #ffd6ff;
+    height: 600px;
+    width: 100%;
+}
+    
