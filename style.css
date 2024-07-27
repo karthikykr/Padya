@@ -24,9 +24,8 @@ nav ul{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(21, 0, 29);
-    position: sticky;
-    
+    background-color: rgb(21, 0, 29); 
+    box-shadow: 0 3px 8px rgb(21, 0, 29);   
 }
 
 nav li{
@@ -42,7 +41,7 @@ a {
     display: grid;
     grid-template-columns: 500px 900px 280px;
     grid-gap: 10px;
-    background-color: black;
+    background-color: white;
     height: 953px;
     width: 100vw;
 }
@@ -59,12 +58,12 @@ a {
     grid-column-end: -2;
 }
 
-#item-1{
+#menuSong{
     grid-row-start: 1;
     grid-row-end: 3;
     height: 800px;
     margin-top: 80px;
-    
+    background-color: aliceblue;  
 }
 
 #item-2{
@@ -77,10 +76,66 @@ a {
     grid-row-end: 4;
     background: linear-gradient(135deg, rgba(75, 0, 130, 0.8), rgba(48, 0, 63, 0.8));
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(100px);
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
+
+}
+
+#menuSong{
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    background-color:  rgb(21, 0, 29);
+    color: white;
+    box-shadow:  4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 10px;
+}
+
+.songHeading{
+    padding: 20px;
+    text-align: center;
+}
+
+.container .items li {
+    list-style-type: none;
+    position:relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+.container .items :hover{
+    background-color: #38302e;
+}
+
+.container .items img{
+    padding: 2px;
+    width: 50px;    
+    height: 50px;
+    border-radius: 8px;
+}
+
+.container .items h5{
+    width: 315px;
+    font-size: 16px;
+    margin-left: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.container .items .fa-circle-play{
+    margin-left: 10px;
+    font-weight: 100;
+    font-size: 26px;
+}
+.container .items .subTitle{
+    font-size: 12px;
 
 }
