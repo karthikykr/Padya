@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    
+    justify-content: center;
 }
 
 body, html {
@@ -10,9 +10,6 @@ body, html {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    justify-content: center;
-    align-items: center;
   }
 
 nav img{
@@ -71,12 +68,7 @@ a {
     border-radius: 10px;  
 }
 
-#item-2{
-    background-color: blueviolet;
-    grid-row-start: 1;
-    height: 350px;
-    width: 800px;
-}
+
 
 #item-4{
     grid-row: -1;
@@ -200,4 +192,49 @@ a {
 .playerControl i{
    font-size: 40px;
     padding: 10px;
+}
+
+
+/*Banner style*/
+#Banner{
+    background-color: blueviolet;
+    grid-row-start: 1;
+    height: 350px;
+    width: 800px;
+    display: flex;
+    overflow: hidden;
+}
+
+.bannerImage{
+    display: flex;
+    width: 300%;
+    height: 350px;
+    
+    animation: slide 10s infinite;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    25%{
+        transform: translateX(0);
+    }
+
+    50%{
+        transform: translateX(-100%);
+    }
+    55%{
+        transform: translateX(-200%);
+    }
+    75%{
+        transform: translateX(-200%);
+    }
+    80%{
+        transform: translateX(-300%);
+    }
+    100%{
+        transform: translateX(-300%);
+    }
+    
 }
