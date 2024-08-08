@@ -197,44 +197,34 @@ a {
 
 /*Banner style*/
 #Banner{
-    background-color: blueviolet;
+    background-image: url(./images/banner1.webp);
     grid-row-start: 1;
     height: 350px;
     width: 800px;
     display: flex;
-    overflow: hidden;
+    animation: slide 25s infinite;
+    background-position: center center;
+    background-size: 100% 100%;
 }
 
-.bannerImage{
-    display: flex;
-    width: 300%;
-    height: 350px;
-    
-    animation: slide 10s infinite;
-}
+
 
 @keyframes slide{
     0%{
-        transform: translateX(0);
+        background-image: url(./images/banner2.webp);
     }
     25%{
-        transform: translateX(0);
+        background-image: url(./images/banner3.webp);
     }
 
     50%{
-        transform: translateX(-100%);
+        background-image: url(./images/banner4.webp);
     }
-    55%{
-        transform: translateX(-200%);
-    }
-    75%{
-        transform: translateX(-200%);
-    }
-    80%{
-        transform: translateX(-300%);
-    }
-    100%{
-        transform: translateX(-300%);
-    }
-    
+}
+
+.bottom-space{
+    background-color: #2b0335;
+    width: vh;
+    display: flex;
+    flex-direction: ;
 }
